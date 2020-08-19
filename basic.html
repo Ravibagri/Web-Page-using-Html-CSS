@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravier info Solution</title>
+</head>
+<style>
+    body {
+        text-decoration-style: none;
+        box-sizing: border-box;
+    }
+    
+    header {
+        text-align: center;
+        background-color: aquamarine;
+        padding: 30px;
+        text-align: auto;
+        color: rgb(56, 66, 66);
+    }
+    
+    nav {
+        background-color: darkgray;
+        overflow: hidden;
+    }
+    
+    nav a {
+        float: left;
+        display: block;
+        padding: 10px 12px;
+        text-decoration: none;
+        text-align: center;
+        color: rgb(40, 87, 87);
+    }
+    
+    nav a:hover {
+        color: rgb(172, 170, 48);
+        background-color: rgb(67, 109, 112);
+    }
+    
+    .left {
+        float: right;
+    }
+    
+    footer {
+        padding: 40px;
+        background-color: cadetblue;
+        color: ghostwhite;
+        text-align: center;
+    }
+    
+    .team p,
+    h3 {
+        text-align: center;
+    }
+    
+    .devesh,
+    .ne,
+    .poo,
+    .ravi {
+        float: left;
+        width: 24.9%;
+    }
+    
+    .team::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    .devesh,
+    .ne,
+    .poo,
+    .ravi h3 p {
+        text-align: center;
+    }
+    
+    #career {
+        float: none;
+        padding: 20px;
+        background-color: olive;
+    }
+    
+    .home {
+        padding: 150px;
+        background-image: url("home.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: auto;
+    }
+    
+    .Text {
+        float: none;
+        padding: 05px;
+        text-align: center;
+        color: darkblue;
+    }
+    
+    .Text:hover {
+        background-color: rgb(223, 221, 198);
+        display: block;
+    }
+    
+    .Text p a:hover {
+        padding: 05px 12px 05px 12px;
+        background-color: white;
+    }
+    
+    input[type=text] {
+        width: 100%;
+        padding: 8px 10px;
+        border: none;
+        background-color: whitesmoke;
+    }
+    
+    input[type=text]:hover {
+        background-color: rgb(202, 190, 190);
+        outline: none;
+    }
+    
+    button {
+        background-color: teal;
+        color: wheat;
+        padding: 12px 14px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgb(36, 63, 63);
+        outline: none;
+    }
+    
+    #contact {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        margin: 1px;
+    }
+    
+    .a {
+        -ms-flex: 30%;
+        flex: 30%;
+    }
+    
+    .b {
+        -ms-flex: 70%;
+        flex: 70%;
+    }
+</style>
+
+<body>
+    <header>
+        <h2>This is header</h2>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Contact</a>
+        <div class='left'>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="home">
+        <div class="Text">
+            <h3 style="font-size: 20px;">Hey I am Ravi Bagri</h3>
+            <p>And<br>I am a Java Developer<br></br><a href="#" style="text-decoration: none;">Click here to Hire Me</a></p>
+        </div>
+    </div>
+    <div id="about">
+        <h3 style="text-align: center;">About Us</h3>
+        <p>We are, engineering graduate from RGPV University Bhopal</p>
+
+    </div>
+    <div class="team" id="team">
+        <h3>Our Team</h3>
+        <p>Meet The Team Member</p>
+        <div class="devesh">
+            <div><img src="/d.jpg" alt="Boss" style="width: 99.5%; height: 300px;"></div>
+            <h3>Chiyaan Vikram</h3>
+            <p>Honor</p>
+        </div>
+        <div class="ne">
+            <div><img src="/n.jpg" alt="Full Stack Developer" style="width: 99.5%; height: 300px;"></div>
+            <h3>Neha Wadbude</h3>
+            <p>Full Stack Developer</p>
+        </div>
+        <div class="poo">
+            <div><img src="/p.jpg" alt="Tester_&_Co-ordinator" style="width: 99.5%;height: 300px;"></div>
+            <h3>Samantha Agnihotri</h3>
+            <p>Tester_&_Co-ordinator</p>
+        </div>
+        <div class="ravi">
+            <div><img src="/img.jpg" alt="Java Developer" style="width: 99.5%; height: 300px;"></div>
+            <h3>Ravi Bagri</h3>
+            <p>Java Developer</p>
+        </div>
+    </div>
+    <div id="career">
+        this is career section
+    </div>
+    <div id="contact">
+        <div class="a">
+            <h3>Contact Us</h3>
+            <h4>Address:</h4>
+            <p>H.N.49 Prabhat Bhopal.</p>
+        </div>
+        <div class="b">
+            <label>Name</label>
+            <input type="text" name="Name" required>
+            <label>Email</label>
+            <input type="text" name="Email">
+            <label>Message</label>
+            <input type="text" name="Message">
+            <button type="submit">Submit</button> </div>
+    </div>
+
+    <footer>
+        <h3>This is Developed by Ravi Bagri</h3>
+    </footer>
+
+</body>
+
+</html>
